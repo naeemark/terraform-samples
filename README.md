@@ -4,12 +4,20 @@ Commonly used use cases to deploy the required infrastructure quickly.
 
 ---
 
+- [Directories](#directories)
 - [Developer Setup](#developer-setup)
 - [Configuration](#configuration)
 - [Pre-reqs](#pre-reqs)
 - [Contribute](#contribution)
 
 ---
+
+## Direcotories
+
+- [1-ec2](./1-ec2/)
+- [2-ec2-docker](./2-ec2-docker/)
+- [3-rds](./3-rds/)
+- [4-ec2-docker-rds](./4-ec2-docker-rds/)
 
 ### Developer Setup
 
