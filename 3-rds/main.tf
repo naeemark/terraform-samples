@@ -56,3 +56,12 @@ resource "aws_db_instance" "rds" {
   tags                    = var.tags
 }
 
+# Local dependencies required to be executed
+# Name should be changed before a rerun
+resource "null_resource" "setup_rds_db" {
+  depends_on = [aws_db_instance.rds] #wait for the db to be ready
+  provisioner "local-exec" {
+    command = "mysql -h ${aws_db_instance.rds.address}  -u ${aws_db_instance.rds.username} -p${aws_db_instance.rds.password} < ${path.module}/scripts/fino_cars.sql"
+  }
+}
+

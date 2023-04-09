@@ -11,7 +11,7 @@ variable "tags" {
 variable "instance_class" {
   description = "Databas instance class"
   type        = string
-  default     = "db.t2.micro"
+  default     = "db.t3.medium"
 }
 
 variable "storage_allocation" {
