@@ -2,7 +2,7 @@ variable "tags" {
   description = "Custom tags"
   type        = map(any)
   default = {
-    "Dir"        = "1-ec2-docker",
+    "Dir"        = "2-ec2-docker",
     "Owner"      = "tf-samples",
     "Created By" = "terraform"
   }
