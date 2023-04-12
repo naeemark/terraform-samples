@@ -2,7 +2,7 @@ variable "tags" {
   description = "Custom tags"
   type        = map(any)
   default = {
-    "Dir"        = "4-ec2-docker-rds",
+    "Dir"        = "5-ec2-docker-rds-3t",
     "Owner"      = "tf-samples",
     "Created By" = "terraform"
   }
@@ -105,6 +105,11 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
+variable "server_mfe_port" {
+  description = "Server MFE port for the EC2 instance"
+  type        = number
+  default     = 80
+}
 variable "server_port" {
   description = "Server port for the EC2 instance"
   type        = number
