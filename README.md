@@ -45,7 +45,6 @@ $ terraform destroy
 ### Configuration
 
 - Terraform should be installed
-- ⚠️ AWS Credentials should be setup as defualt profile of local machine
 
 ### Pre-reqs
 
@@ -56,3 +55,7 @@ $ terraform destroy
 ## Contribution
 
 - Forks are always appreciated
+
+---
+
+![Infrastructure](/screenshots/2-ec2-docker.png)

@@ -7,11 +7,12 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-1"
+  profile = "muaksite"
+  region  = "ap-southeast-1"
 }
 
 resource "aws_instance" "ec2_instance" {
-  ami                    = "ami-0b695b365bec60938"
+  ami                    = "ami-05bf0125f616dc488"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.ec2_instance_sg.id]
   key_name               = var.ssh_connection_key_name

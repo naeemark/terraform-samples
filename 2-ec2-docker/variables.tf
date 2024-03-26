@@ -29,6 +29,6 @@ variable "server_port" {
 variable "ssh_connection_key_name" {
   description = "SSH connection key name"
   type        = string
-  default     = "devops-vm-keypair-2"
+  default     = "itadmin-keypair-1"
 }
 
