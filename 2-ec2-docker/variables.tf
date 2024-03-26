@@ -26,6 +26,12 @@ variable "server_port" {
   default     = 80
 }
 
+variable "cars_api_port" {
+  description = "Cars API port for the EC2 instance"
+  type        = number
+  default     = 8080
+}
+
 variable "ssh_connection_key_name" {
   description = "SSH connection key name"
   type        = string

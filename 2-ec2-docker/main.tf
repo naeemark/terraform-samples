@@ -48,6 +48,14 @@ resource "aws_security_group" "ec2_instance_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    description = format("Allows Trafic on Port: %s", var.cars_api_port)
+    from_port   = var.cars_api_port
+    to_port     = var.cars_api_port
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     description      = "Allows Outbound Trafic"
     from_port        = 0
