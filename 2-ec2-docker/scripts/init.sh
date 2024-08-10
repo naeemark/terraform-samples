@@ -2,8 +2,8 @@
 
 # Create mount volume for logs
   sudo su - root
-  mkfs.ext4 /dev/sdf
-  mount -t ext4 /dev/sdf /var/log
+  # mkfs.ext4 /dev/sdf
+  # mount -t ext4 /dev/sdf /var/log
   
   # Install MySQL Client
   # sudo yum install mysql -y
