@@ -19,4 +19,4 @@
 
 ## Screenshots
 
-![Browser](./../screenshots/2-ec2-docker.png)
+![Browser](./../../screenshots/2-ec2-docker.png)
